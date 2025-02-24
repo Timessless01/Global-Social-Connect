@@ -1,0 +1,403 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, 
+    #f5f7fa 0%, 
+    #c3cfe2 100%);
+  animation: gradientAnimation 15s ease infinite;
+  color: #2c3e50;
+  font-family: 'Segoe UI', system-ui;
+  min-height: 100vh;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+  background: linear-gradient(45deg, #2c3e50, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.social-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.social-card i {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.social-card span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Brand Colors */
+.facebook { background: #1877f2; }
+.twitter { background: #1da1f2; }
+.instagram { background: #e4405f; }
+.linkedin { background: #0a66c2; }
+.youtube { background: #ff0000; }
+.tiktok { background: #000000; }
+.reddit { background: #ff4500; }
+.snapchat { background: #fffc00; color: #000; }
+.pinterest { background: #bd081c; }
+.discord { background: #5865f2; }
+.twitch { background: #9146ff; }
+.whatsapp { background: #25d366; }
+.telegram { background: #0088cc; }
+.signal { background: #3a76f0; }
+.tumblr { background: #001935; }
+.medium { background: #000000; }
+.quora { background: #aa2200; }
+.vimeo { background: #1ab7ea; }
+.vk { background: #4a76a8; }
+.wechat { background: #07c160; }
+.line { background: #00c300; }
+.clubhouse { background: #f89500; }
+.patreon { background: #ff424d; }
+.behance { background: #1769ff; }
+.dribbble { background: #ea4c89; }
+.stackoverflow { background: #f48024; }
+.spotify { background: #1db954; }
+/* Add these to existing styles.css */
+.about-me { background: #00a98f; }
+.academia { background: #41454b; }
+.aim { background: #ffd700; color: #000; }
+.amino { background: #00a8e8; }
+.anobii { background: #ff4a00; }
+.apple-music { background: #fa243c; }
+.artistree { background: #13a3f7; }
+.audius { background: #0d0d0d; }
+.badoo { background: #ff3366; }
+.bandcamp { background: #629aa9; }
+.bilibili { background: #00a1d6; }
+.bitbucket { background: #0052cc; }
+.blend { background: #ff9900; }
+.blogger { background: #ff5722; }
+.bluesky { background: #0070ff; }
+.buzzer { background: #ff4444; }
+.cafe { background: #795548; }
+.cashapp { background: #00d632; }
+.codepen { background: #000000; }
+.couchsurfing { background: #ff5722; }
+.crunchbase { background: #2d2d2d; }
+.deviantart { background: #05cc47; }
+.digg { background: #000000; }
+.disqus { background: #2e9fff; }
+.ello { background: #000000; }
+.etsy { background: #f16521; }
+.fanhouse { background: #ff66c4; }
+.figma { background: #a259ff; }
+.firefish { background: #ff6b6b; }
+.flickr { background: #ff0084; }
+.flipboard { background: #e12828; }
+.fiverr { background: #1dbf73; }
+.foursquare { background: #f94877; }
+.friendster { background: #3b5998; }
+.gab { background: #25d366; }
+.github { background: #181717; }
+.gitlab { background: #fc6d26; }
+.goodreads { background: #553b08; }
+.google-scholar { background: #4285f4; }
+.groupme { background: #00aff0; }
+.hackernews { background: #ff6600; }
+.houseparty { background: #ff4757; }
+.hubzilla { background: #e44d26; }
+.imvu { background: #f7a81b; }
+.issuu { background: #f26f61; }
+.itchio { background: #fa5c5c; }
+.kakao { background: #ffcd00; color: #000; }
+.kik { background: #82bc23; }
+.lastfm { background: #d51007; }
+.letterboxd { background: #202830; }
+.linktree { background: #39e09b; }
+.livejournal { background: #00b0ea; }
+.mastodon { background: #6364ff; }
+.meetup { background: #f6405f; }
+.mix { background: #ff8226; }
+.myspace { background: #000000; }
+.nextdoor { background: #00b246; }
+.niconico { background: #231815; }
+.onlyfans { background: #00aff0; }
+.openstreetmap { background: #7ebc6f; }
+.orcid { background: #a6ce39; }
+.periscope { background: #40a4c4; }
+.pixiv { background: #0096fa; }
+.playstation { background: #003791; }
+.plurk { background: #ff574d; }
+.podcast { background: #9933cc; }
+.protonmail { background: #8b89cc; }
+.rabbithole { background: #ff6b6b; }
+.ravelry { background: #b83844; }
+.researchgate { background: #00ccbb; }
+.reverb { background: #ff0000; }
+.reverbnation { background: #e43526; }
+.roblox { background: #00a2ff; }
+.rss { background: #ffa500; }
+.skype { background: #00aff0; }
+.slack { background: #4a154b; }
+.soundcloud { background: #ff3300; }
+.steam { background: #000000; }
+.substack { background: #ff6719; }
+.teams { background: #6264a7; }
+.trello { background: #0079bf; }
+.venmo { background: #008cff; }
+.viber { background: #7360f2; }
+.vsco { background: #000000; }
+.wattpad { background: #ff500a; }
+.weibo { background: #e6162d; }
+.wikipedia { background: #000000; }
+.wordpress { background: #21759b; }
+.xbox { background: #107c10; }
+.xing { background: #006567; }
+.yahoo { background: #6001d2; }
+.yelp { background: #d32323; }
+.zalo { background: #0068ff; }
+.zillow { background: #0074e4; }
+.zoom { background: #2d8cff; }
+
+.donate-section {
+  margin: 3rem 0;
+}
+
+.donate-btn {
+  background: linear-gradient(45deg, #ff6b6b, #ff9f43);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+}
+
+.donate-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+  background: linear-gradient(45deg, #ff9f43, #ff6b6b);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Social Cards - New Additions */
+.social-card.paypal {
+  background: linear-gradient(135deg, #003087 0%, #009cde 100%);
+}
+
+.social-card.zelle {
+  background: linear-gradient(135deg, #6d1d7c 0%, #a62655 100%);
+}
+
+.social-card.stripe {
+  background: linear-gradient(135deg, #6772e5 0%, #7795f8 100%);
+}
+
+.social-card.squarespace {
+  background: linear-gradient(135deg, #222 0%, #000 100%);
+}
+
+.social-card.medium {
+  background: linear-gradient(135deg, #00ab6c 0%, #02b875 100%);
+}
+
+.social-card.slack {
+  background: linear-gradient(135deg, #4a154b 0%, #611f69 100%);
+}
+
+.social-card.trello {
+  background: linear-gradient(135deg, #0079bf 0%, #00aecc 100%);
+}
+
+.social-card.asana {
+  background: linear-gradient(135deg, #273347 0%, #3f4d63 100%);
+}
+
+.social-card.notion {
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+}
+
+.social-card.figma {
+  background: linear-gradient(135deg, #a259ff 0%, #ff7262 100%);
+}
+
+.social-card.behance {
+  background: linear-gradient(135deg, #1769ff 0%, #1f87ff 100%);
+}
+
+.social-card.deviantart {
+  background: linear-gradient(135deg, #05cc47 0%, #4dcf7f 100%);
+}
+
+.social-card.soundcloud {
+  background: linear-gradient(135deg, #ff5500 0%, #ff7700 100%);
+}
+
+.social-card.mixcloud {
+  background: linear-gradient(135deg, #314887 0%, #5068a5 100%);
+}
+
+.social-card.bandcamp {
+  background: linear-gradient(135deg, #629aa9 0%, #7ab6c2 100%);
+}
+
+.social-card.audius {
+  background: linear-gradient(135deg, #3d3d3d 0%, #000 100%);
+}
+
+.social-card.anchor {
+  background: linear-gradient(135deg, #8940fa 0%, #a96bfe 100%);
+}
+
+.social-card.kofi {
+  background: linear-gradient(135deg, #29abe0 0%, #13c7a3 100%);
+}
+
+.social-card.buymeacoffee {
+  background: linear-gradient(135deg, #ffdd00 0%, #ffaa00 100%);
+}
+
+/* Universal Social Card Styles */
+.social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 100px;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.social-card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.social-card span {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Donate Section Styles */
+.donate-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.donate-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.donate-btn i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.donate-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  
+  .social-card i {
+    font-size: 1.5rem;
+  }
+  
+  .social-card span {
+    font-size: 0.8rem;
+  }
+}
